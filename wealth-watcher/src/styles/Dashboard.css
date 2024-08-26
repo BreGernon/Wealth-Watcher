@@ -1,0 +1,162 @@
+/* Reset default margins and paddings, set full width and background color */
+body, html {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Full width */
+  background-color: #F0F0F0; /* Light gray background color */
+}
+
+/* Dashboard container styling */
+.dashboard {
+    padding: 20px; /* Add padding around the content */
+    font-family: Arial, Helvetica, sans-serif; /* Set font family */
+    min-height: 100vh; /* Ensure the dashboard takes at least full viewport height */
+    background-color: #F0F0F0; /* Match the background color with body */
+}
+
+/* Header styling for logged-in state */
+.loggedin-header {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center align child elements horizontally */
+    margin-bottom: 20px; /* Space below the header */
+    width: 100%; /* Full width of the container */
+}
+
+/* Logo container styling */
+.logo-container {
+  background-color: #008080; /* Teal background color */
+  padding: 20px; /* Add padding around the logo */
+  width: 100%; /* Full width */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align logo horizontally */
+}
+
+/* Logo image styling */
+.loggedin-logo {
+    max-height: 50px; /* Restrict maximum height */
+    margin-bottom: 10px; /* Space below the logo */
+}
+
+/* Full width navigation bar styling */
+.full-width-nav {
+  width: 100vw; /* Full viewport width */
+  background-color: #005073; /* Dark blue background color */
+}
+
+/* Navigation bar styling */
+.loggedin-nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute links evenly */
+    width: 100vw; /* Full viewport width */
+    background-color: #005073; /* Dark blue background color */
+    padding: 10px 0; /* Vertical padding */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Navigation link styling */
+.loggedin-nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding around text */
+    flex: 1; /* Allow links to grow and fill available space */
+    text-align: center; /* Center align text */
+}
+
+/* Navigation link hover effect */
+.loggedin-nav a:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .loggedin-nav {
+      flex-direction: column; /* Stack links vertically */
+      padding: 5px 0; /* Adjust vertical padding */
+  }
+
+  .loggedin-nav a {
+      padding: 8px 0; /* Adjust padding for smaller screens */
+      width: 100%; /* Full width of the container */
+  }
+}
+
+/* Section containing data circles and expense table */
+.data-section {
+    margin-top: 20px; /* Space above the section */
+    background-color: #F0F0F0; /* Match the background color with dashboard */
+}
+
+/* Flex container for data circles */
+.data-circles {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.circle {
+    background-color: #f2f2f2; /* Light gray background for visibility */
+    border-radius: 50%; /* Makes the div a circle */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px; /* Adjust padding for more space */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.circle h3 {
+    margin: 0;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.circle p {
+    margin: 5px 0 0;
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+
+/* Styling for the expense table */
+.expense-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-bottom: 20px; /* Space below the table */
+}
+
+/* Table cell padding and border styling */
+.expense-table th, .expense-table td {
+    padding: 10px; /* Padding inside cells */
+    border: 1px solid #ddd; /* Light gray border color */
+    text-align: center; /* Center align text */
+}
+
+/* Table header background color */
+.expense-table th {
+    background-color: #f4f4f4; /* Light gray background color */
+}
+
+/* Flex container for action buttons */
+.action-buttons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute buttons evenly */
+    margin-top: 20px; /* Space above buttons */
+}
+
+/* Styling for individual action buttons */
+.action-buttons button {
+    padding: 10px 20px; /* Padding inside buttons */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Action button hover effect */
+.action-buttons button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}

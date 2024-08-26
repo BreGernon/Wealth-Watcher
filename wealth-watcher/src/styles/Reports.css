@@ -1,0 +1,32 @@
+/* Reports.css */
+
+.report-options {
+    margin: 20px 0;
+}
+
+.report-options button {
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    background-color: #6c63ff;
+    color: white;
+    cursor: pointer;
+}
+
+.report-options button:hover {
+    background-color: #5a54e4;
+}
+
+.report-results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.report-results th, .report-results td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.report-results th {
+    background-color: #f4f4f4;
+}

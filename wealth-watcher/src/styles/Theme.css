@@ -1,0 +1,19 @@
+/* Light Theme */
+.light-theme {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    /* Add more theme variables as needed */
+}
+
+/* Dark Theme */
+.dark-theme {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    /* Add more theme variables as needed */
+}
+
+/* Apply theme variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}

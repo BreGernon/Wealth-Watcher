@@ -1,0 +1,47 @@
+/* src/styles/Settings.css */
+.settings-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.settings-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.settings-page .form-group {
+    margin-bottom: 15px;
+}
+
+.settings-page .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.settings-page .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.settings-page .form-group input[type="checkbox"] {
+    width: auto;
+}
+
+.settings-page button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.settings-page button:hover {
+    background-color: #45a049;
+}
